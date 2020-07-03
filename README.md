@@ -6,10 +6,8 @@ Pytorch0.4.1 codes for InsightFace
 
 ## 1. Intro
 
-- This repo is a reimplementation of Arcface[(paper)](https://arxiv.org/abs/1801.07698), or Insightface[(github)](https://github.com/deepinsight/insightface)
-- For models, including the pytorch implementation of the backbone modules of Arcface and MobileFacenet
-- Codes for transform MXNET data records in Insightface[(github)](https://github.com/deepinsight/insightface) to Image Datafolders are provided
-- Pretrained models are posted, include the [MobileFacenet](https://arxiv.org/abs/1804.07573) and IR-SE50 in the original paper
+- Arcface[(paper)](https://arxiv.org/abs/1801.07698), or Insightface[(github)](https://github.com/deepinsight/insightface)
+- Pretrained models are [MobileFacenet](https://arxiv.org/abs/1804.07573) and IR-SE50 in the original paper
 
 ------
 
@@ -29,17 +27,16 @@ Pytorch0.4.1 codes for InsightFace
 
 ## 3. How to use
 
-- clone
-
+  for images:
   ```
-  git clone https://github.com/TropComplique/mtcnn-pytorch.git
+  python face_verify.py
   ```
 
 ### 3.1 Data Preparation
 
 #### 3.1.1 Prepare Facebank (For testing over camera or video)
 
-Provide the face images your want to detect in the data/face_bank folder, and guarantee it have a structure like following:
+Add the face images data/facebank folder, and guarantee it have a structure like following:
 
 ```
 data/facebank/
